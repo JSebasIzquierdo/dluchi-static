@@ -1,0 +1,96 @@
+.paragraph--nuestras-tiendas-text {
+  color: #00c0af;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 43px;
+  margin-left: 10px;
+}
+
+.paragraph--descripcion-tiendas {
+  color: #808080;
+  font-size: 15px;
+  line-height: 19px;
+  font-weight: 200;
+  margin: 0px 0px 10px 10px;
+}
+
+.paragraph--nombre-tienda {
+  font-weight: 700;
+  font-size: 20;
+  margin: 0px 0px 10px;
+  font-size: 14px;
+}
+
+.paragraph--label-direccion {
+  font-size: 14px;
+  color: #808080;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0px;
+}
+
+.paragraph--direccion {
+  font-size: 12px;
+  color: #808080;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0px 0px 10px;
+}
+
+.paragraph--boton-detalles {
+  color: #565656;
+  text-decoration-line: underline;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0px;
+}
+
+.paragraph--titleSlide {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: #565656;
+  margin: 0px 0px 0px;
+}
+.paragraph--descriptionSlide {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #808080;
+  margin: 0px;
+}
+
+.paragraph--etica-text {
+  font-size: 16px;
+  font-weight: 200;
+  color: #808080;
+  text-align: justify;
+}
+
+.paragraph--title-etica {
+    color: #00c0af;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 43px;
+    margin: 30px 0px 0px;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  .imageElement--icon-slider {
+    width: 60px;
+  }
+
+  .paragraph--titleSlide {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #565656;
+  }
+  .paragraph--descriptionSlide {
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 25px;
+  }
+}

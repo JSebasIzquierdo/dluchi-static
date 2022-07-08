@@ -1,0 +1,216 @@
+{
+  "store.custom#wpage": {
+    "children": [
+      "responsive-layout.desktop#etica",
+      "responsive-layout.tablet#etica",
+      "responsive-layout.phone#etica"
+    ]
+  },
+
+  // Responsive Layout (Desktop)
+
+  "responsive-layout.desktop#etica": {
+    "children": ["flex-layout.row#container-etica-desktop"]
+  },
+
+  "flex-layout.row#container-etica-desktop": {
+    "children": [
+      "rich-text#title-etica",
+      "image#banner-etica-desktop",
+      "flex-layout.row#text-etica-1",
+      "flex-layout.row#text-etica-2",
+      "flex-layout.row#text-etica-3-v2",
+      "flex-layout.row#imagesLayoutDesktop"
+    ],
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "container-etica-desktop"
+    }
+  },
+
+  "image#banner-etica-desktop": {
+    "props": {
+      "src": "assets/img/banner1ed.png",
+      "blockClass": "img-banner-etica-dk"
+    }
+  },
+
+  "flex-layout.row#text-etica-3-v2": {
+    "children": ["flex-layout.col#text-col-1", "flex-layout.col#text-col-2"],
+    "props": {
+      "blockClass": "etica-3-v2",
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#text-col-1": {
+    "children": ["rich-text#paragraph3-etica"],
+    "props": {
+      "blockClass": "col-text-1"
+    }
+  },
+
+  "flex-layout.col#text-col-2": {
+    "children": ["image#banner-etica-2-mobile"],
+    "props": {
+      "blockClass": "col-text-2"
+    }
+  },
+
+  "flex-layout.row#imagesLayoutDesktop": {
+    "children": [
+      "image#image1-desktop",
+      "image#image2-desktop",
+      "image#image3-desktop"
+    ],
+    "props": {
+      "blockClass": "desktop-row-images-etica"
+    }
+  },
+
+  "image#image1-desktop": {
+    "props": {
+      "src": "assets/img/img1dk.png",
+      "blockClass": "image-row-dk"
+    }
+  },
+
+  "image#image2-desktop": {
+    "props": {
+      "src": "assets/img/img2dk.png",
+      "blockClass": "image-row-dk"
+    }
+  },
+
+  "image#image3-desktop": {
+    "props": {
+      "src": "assets/img/img3dk.png",
+      "blockClass": "image-row-dk"
+    }
+  },
+
+  "responsive-layout.tablet#etica": {
+    "children": ["flex-layout.row#container-etica-desktop"]
+  },
+
+  // Responsive Layout (Mobile)
+
+  "responsive-layout.phone#etica": {
+    "children": ["flex-layout.row#container-etica"]
+  },
+
+  "flex-layout.row#container-etica": {
+    "children": [
+      "rich-text#title-etica",
+      "image#banner-etica-mobile",
+      "flex-layout.row#text-etica-1",
+      "flex-layout.row#text-etica-2",
+      "flex-layout.row#text-etica-3",
+      "image#banner-etica-2-mobile",
+      "flex-layout.row#imagesLayout"
+    ],
+    "props": {
+      "blockClass": "container-etica-mobile"
+    }
+  },
+
+  "rich-text#title-etica": {
+    "props": {
+      "text": "LÍNEA ÉTICA",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "title-etica"
+    }
+  },
+
+  "image#banner-etica-mobile": {
+    "props": {
+      "src": "assets/img/banner1e.png",
+      "blockClass": "image-banner-1-mobile"
+    }
+  },
+
+  "flex-layout.row#text-etica-1": {
+    "children": ["rich-text#paragraph1-etica"],
+    "props": {
+      "blockClass": "row-text1"
+    }
+  },
+
+  "rich-text#paragraph1-etica": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "blockClass": "etica-text"
+    }
+  },
+
+  "flex-layout.row#text-etica-2": {
+    "children": ["rich-text#paragraph2-etica", "rich-text#paragraph2-etica"],
+    "props": {
+      "blockClass": "row-text1"
+    }
+  },
+
+  "rich-text#paragraph2-etica": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "blockClass": "etica-text"
+    }
+  },
+
+  "flex-layout.row#text-etica-3": {
+    "children": ["rich-text#paragraph3-etica"],
+    "props": {
+      "blockClass": "row-text1"
+    }
+  },
+
+  "rich-text#paragraph3-etica": {
+    "props": {
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "blockClass": "etica-text"
+    }
+  },
+
+  "image#banner-etica-2-mobile": {
+    "props": {
+      "src": "assets/img/banner2e.png",
+      "blockClass": "image-etica-2"
+    }
+  },
+
+  "flex-layout.row#imagesLayout": {
+    "children": [
+      "image#image1-mobile",
+      "image#image2-mobile",
+      "image#image3-mobile"
+    ],
+    "props": {
+      "blockClass": "mobile-row-images-etica"
+    }
+  },
+
+  "image#image1-mobile": {
+    "props": {
+      "src": "assets/img/img1mb.png",
+      "blockClass": "image-row-mb"
+    }
+  },
+
+  "image#image2-mobile": {
+    "props": {
+      "src": "assets/img/img2mb.png",
+      "blockClass": "image-row-mb"
+    }
+  },
+
+  "image#image3-mobile": {
+    "props": {
+      "src": "assets/img/img3mb.png",
+      "blockClass": "image-row-mb"
+    }
+  }
+}

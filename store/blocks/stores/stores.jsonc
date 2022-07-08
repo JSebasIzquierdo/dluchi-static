@@ -1,0 +1,303 @@
+{
+  "store.custom#stores": {
+    "props": {
+      "blockClass": "stores-container"
+    },
+    "children": [
+      "responsive-layout.desktop#stores",
+      "responsive-layout.phone#stores"
+    ]
+  },
+
+  // * Declaración flex layout desktop y phone.
+
+  "responsive-layout.desktop#stores": {
+    "children": ["flex-layout.row#container", "flex-layout.row#slider-products"]
+  },
+
+  "responsive-layout.phone#stores": {
+    "children": ["flex-layout.row#container-mobile"]
+  },
+
+  // * Main Row Container
+
+  "flex-layout.row#container": {
+    "children": [
+      "flex-layout.row#nuestras-tiendas",
+      "flex-layout.row#lista-mapas",
+      "flex-layout.row#banner-50-off"
+    ],
+    "props": {
+      "blockClass": "contenedor-tiendas",
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center"
+    }
+  },
+
+  // * Container mobile
+
+  "flex-layout.row#container-mobile": {
+    "children": [
+      "flex-layout.row#nuestras-tiendas",
+      "flex-layout.row#lista",
+      "flex-layout.row#banner-50-off",
+      "flex-layout.row#slider-products"
+    ],
+    "props": {
+      "blockClass": "contenedor-tiendas"
+    }
+  },
+
+  // * Banner nuestras tiendas
+
+  "flex-layout.row#nuestras-tiendas": {
+    "children": ["rich-text#nuestras-tiendas", "rich-text#encuentra-tiendas"],
+    "props": {
+      "blockClass": "nuestras-tiendas-contenedor",
+      "fullWidth": true,
+      "preventHorizontalStretch": true
+    }
+  },
+
+  // * Texto Nuestras Tiendas
+
+  "rich-text#nuestras-tiendas": {
+    "props": {
+      "text": "NUESTRAS TIENDAS",
+      "blockClass": "nuestras-tiendas-text"
+    }
+  },
+
+  // * Descripción Banner tiendas
+
+  "rich-text#encuentra-tiendas": {
+    "props": {
+      "text": "Encuentra tu tienda D'Luchi más cercana",
+      "blockClass": "descripcion-tiendas"
+    }
+  },
+
+  // * Contenido de listas y mapa
+
+  "flex-layout.row#lista-mapas": {
+    "children": ["flex-layout.col#lista-tiendas", "flex-layout.col#mapa"],
+    "props": {
+      "blockClass": "contenedor-lista-mapa"
+    }
+  },
+
+  // * Row Listas Mobile
+
+  "flex-layout.row#lista": {
+    "children": ["flex-layout.col#lista-tiendas"],
+    "props": {
+      "blockClass": "listas-mobile"
+    }
+  },
+
+  // * Flex banner 50% off
+
+  "flex-layout.row#banner-50-off": {
+    "children": ["image#banner-50-off"],
+    "props": {
+      "blockClass": "banner-row"
+    }
+  },
+
+  "image#banner-50-off": {
+    "props": {
+      "blockClass": "banner-50-off",
+      "src": "assets/img/banner_50_off_desktop.png"
+    }
+  },
+
+  // * Columna listado de tiendas
+
+  "flex-layout.col#lista-tiendas": {
+    "children": [
+      "flex-layout.row#detalles-tienda",
+      "flex-layout.row#detalles-tienda",
+      "flex-layout.row#detalles-tienda",
+      "flex-layout.row#detalles-tienda",
+      "flex-layout.row#detalles-tienda"
+    ],
+    "props": {
+      "blockClass": "detalles-tienda"
+    }
+  },
+
+  "flex-layout.col#mapa": {
+    "props": {
+      "blockClass": "mapa"
+    },
+    "children": ["image#mapa-view"]
+  },
+
+  // * Vista del mapa (en imagen, referencia)
+
+  "image#mapa-view": {
+    "props": {
+      "src": "assets/img/map.png"
+    }
+  },
+
+  // * Contenido del detalle de la tienda
+
+  "flex-layout.row#detalles-tienda": {
+    "children": [
+      "rich-text#nombreTienda",
+      "rich-text#Direccion",
+      "rich-text#NumeroDireccion",
+      "rich-text#boton-detalles"
+    ],
+    "props": {
+      "blockClass": "detallesTienda",
+      "fullWidth": true,
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "rich-text#nombreTienda": {
+    "props": {
+      "text": "Nombre de la tienda",
+      "blockClass": "nombre-tienda"
+    }
+  },
+
+  "rich-text#Direccion": {
+    "props": {
+      "text": "Dirección:",
+      "blockClass": "label-direccion"
+    }
+  },
+
+  "rich-text#NumeroDireccion": {
+    "props": {
+      "text": "13 - 67 Cl 5 # 15 - 34, Departamento, Ciudad",
+      "blockClass": "direccion"
+    }
+  },
+
+  "rich-text#boton-detalles": {
+    "props": {
+      "text": "Más detalles",
+      "blockClass": "boton-detalles"
+    }
+  },
+
+  "flex-layout.row#slider-products": {
+    "props": {
+      "blockClass": "slider-products"
+    },
+    "children": ["slider-layout#SliderProducts"]
+  },
+
+  // * Slider Productos
+
+  "slider-layout#SliderProducts": {
+    "props": {
+      "blockClass": "slider-products",
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 1
+      },
+      "showNavigationArrows": "never"
+    },
+    "children": [
+      "flex-layout.col#slider1",
+      "flex-layout.col#slider2",
+      "flex-layout.col#slider3"
+    ]
+  },
+
+  // *Primer Item Slider
+
+  "flex-layout.col#slider1": {
+    "props": {
+      "blockClass": "items-productos-slider"
+    },
+    "children": ["flex-layout.col#icon1", "flex-layout.col#description-item"]
+  },
+
+  "flex-layout.col#icon1": {
+    "children": ["image#icon1"],
+    "props": {
+      "blockClass": "icon-col"
+    }
+  },
+
+  "image#icon1": {
+    "props": {
+      "src": "assets/img/icon1.png",
+      "blockClass": "icon-slider"
+    }
+  },
+
+  // *Segundo Item Slider
+  "flex-layout.col#slider2": {
+    "props": {
+      "blockClass": "items-productos-slider"
+    },
+    "children": ["flex-layout.col#icon2", "flex-layout.col#description-item"]
+  },
+
+  "flex-layout.col#icon2": {
+    "children": ["image#icon2"],
+    "props": {
+      "blockClass": "icon-col"
+    }
+  },
+
+  "image#icon2": {
+    "props": {
+      "src": "assets/img/icon2.png",
+      "blockClass": "icon-slider"
+    }
+  },
+
+  // *Tercer Item Slider
+
+  "flex-layout.col#slider3": {
+    "props": {
+      "blockClass": "items-productos-slider"
+    },
+    "children": ["flex-layout.col#icon3", "flex-layout.col#description-item"]
+  },
+
+  "flex-layout.col#icon3": {
+    "children": ["image#icon3"],
+    "props": {
+      "blockClass": "icon-col"
+    }
+  },
+
+  "image#icon3": {
+    "props": {
+      "src": "assets/img/icon3.png",
+      "blockClass": "icon-slider"
+    }
+  },
+
+  "flex-layout.col#description-item": {
+    "children": ["rich-text#titleSlide", "rich-text#descriptionSlide"],
+    "props": {
+      "blockClass": "col-description"
+    }
+  },
+
+  "rich-text#titleSlide": {
+    "props": {
+      "text": "Vestidos de Baño",
+      "blockClass": "titleSlide"
+    }
+  },
+
+  "rich-text#descriptionSlide": {
+    "props": {
+      "text": "Lorem ipsum es simplemente el texto de relleno de las imprentas",
+      "blockClass": "descriptionSlide"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.sliderTrackContainer--slider-products {
+    width: 100%;
+}
+
+.paginationDotsContainer--slider-products {
+    top: 78px;
+
+}
+
+.paginationDot--slider-products--isActive {
+    background-color: transparent !important;
+    border-radius: 2px;
+    border: 1px solid #00C0AF !important;
+}
+
+.paginationDot--slider-products{
+    background-color: #00C0AF;
+    border-radius: 2px;
+   
+}
+
+
+@media only screen and (min-width: 768px) {
+    .sliderTrackContainer--slider-products {
+        width: 70%;
+    }
+    
+  }
+  

@@ -1,0 +1,148 @@
+.flexRow--slider-products {
+  margin: 40px 0px;
+  background: #fbf9f7;
+  padding: 20px 0px 30px;
+}
+
+.flexCol--items-productos-slider {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexCol--detalles-tienda {
+  background-color: #fff;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.flexColChild--icon-col {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: center;
+}
+
+.flexRow--detallesTienda {
+  border: 1px solid #e8e8e8;
+  border-radius: 13.17px;
+  padding: 37.63px;
+  margin: 10px;
+  background-color: #fff;
+}
+
+.flexRowContent--detallesTienda {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRowContent--nuestras-tiendas-contenedor {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.flexRow--nuestras-tiendas-contenedor {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.flexRowContent--contenedor-tiendas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flexRowContent--container-etica-desktop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flexRowContent--mobile-row-images-etica {
+  display: flex;
+  margin: 40px 0px;
+}
+
+.flexRow--desktop-row-images-etica {
+  margin: 40px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .flexRowContent--container-etica-desktop {
+    width: 80%;
+  }
+
+  .flexRow--container-etica-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flexRowContent--etica-3-v2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+
+  .flexCol--col-text-1 {
+    margin-right: 20px;
+  }
+
+  .flexRowContent--etica-3-v2 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flexRowContent--contenedor-tiendas {
+    width: 50%;
+    background: #fcf8f6;
+  }
+
+  .flexRow--detallesTienda {
+    padding: 15px 10px;
+    margin: 5px 10px;
+  }
+
+  .flexRow--contenedor-lista-mapa {
+    margin: 20px 0px;
+  }
+
+  .flexCol--col-description {
+    width: 80%;
+  }
+
+  .flexColChild--icon-col {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .flexRow--slider-products {
+    margin: 40px 0px;
+    padding: 20px 0px;
+  }
+
+  .flexRow--container-etica-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flexRowContent--container-etica-desktop {
+    width: 58%;
+  }
+}
+
+.flexRow--contenedor-tiendas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

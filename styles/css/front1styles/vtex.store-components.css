@@ -1,0 +1,31 @@
+.imageElement--icon-slider {
+  width: 100px;
+}
+
+.imageElement--image-row-mb {
+  width: 90%;
+}
+
+.imageElement--image-etica-2 {
+  width: 80%;
+}
+
+@media only screen and (min-width: 600px) {
+  .imageElement--image-etica-2 {
+    height: fit-content;
+  }
+  .imageElement--image-etica-2 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .imageElement--icon-slider {
+    width: 80px;
+    margin: 0px 10px;
+  }
+
+  .imageElement--image-etica-2 {
+    width: 2400px;
+  }
+}
